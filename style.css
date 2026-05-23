@@ -28,4 +28,6 @@ p, ul{
 
 h2{
     padding-left: 20px;
+} nav a:hover{
+    color: orange;
 }

@@ -1,13 +1,13 @@
-# Project Journal
+# Development Journal
 
 ## Post 1
 
-Repository was created and project files were added.
+Создан GitHub репозиторий проекта Moodle.
 
 ## Post 2
 
-Website design and navigation menu were completed.
+Разработан современный дизайн сайта с использованием HTML и CSS.
 
 ## Post 3
 
-Moodle features and JavaScript functionality were added.
+Добавлены основные функции платформы Moodle и JavaScript функциональность.

@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Moodle Platform</title>
+    <title>Moodle Learning Platform</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,77 +13,161 @@
     <!-- NAVBAR -->
 
     <nav>
+        <div class="logo">Moodle Project</div>
 
-        <div class="logo">
-            <h1>Moodle Platform</h1>
+        <div class="menu">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О Moodle</a>
+            <a href="features.html">Функции</a>
+            <a href="#participants">Участники</a>
+            <a href="#journal">Журнал</a>
+            <a href="#resources">Ресурсы</a>
         </div>
-
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="features.html">Features</a></li>
-        </ul>
-
     </nav>
 
-    <!-- HERO -->
+    <!-- HERO SECTION -->
 
     <section class="hero">
 
-        <div class="hero-content">
+        <img 
+        src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Moodle-logo.svg" 
+        alt="Moodle Logo"
+        class="hero-image">
 
-            <h2>Welcome to Moodle Learning Platform</h2>
+        <h1>Добро пожаловать в Moodle</h1>
 
-            <p>
-                Moodle helps students and teachers study online effectively.
-            </p>
+        <p>
+            Современная платформа дистанционного обучения
+            для студентов и преподавателей.
+        </p>
 
-            <button id="btn">
-                Learn More
-            </button>
-
-        </div>
+        <button onclick="showMessage()">
+            Начать обучение
+        </button>
 
     </section>
 
-    <!-- CONTENT -->
+    <!-- ABOUT -->
 
-    <section class="content">
+    <section class="about-section">
 
-        <h2>What is Moodle?</h2>
+        <h2>Что такое Moodle?</h2>
 
         <p>
-            Moodle is one of the most popular online learning systems used by
-            schools, universities and organizations.
+            Moodle — это популярная система управления обучением (LMS),
+            которая используется университетами, школами и образовательными
+            центрами по всему миру.
         </p>
+
+    </section>
+
+    <!-- FEATURES -->
+
+    <section class="features-section">
+
+        <h2>Основные возможности</h2>
 
         <div class="cards">
 
             <div class="card">
-                <h3>Online Education</h3>
-
-                <p>
-                    Students can learn from anywhere in the world.
-                </p>
-            </div>
-
-            <div class="card">
                 <h3>Assignments</h3>
-
                 <p>
-                    Teachers can create homework and projects online.
+                    Загрузка домашних заданий и проверка работ студентов.
                 </p>
             </div>
 
             <div class="card">
                 <h3>Quiz System</h3>
-
                 <p>
-                    Moodle supports tests and online exams.
+                    Онлайн тесты и автоматическая проверка результатов.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Grade System</h3>
+                <p>
+                    Система оценивания и мониторинг успеваемости.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Video Lessons</h3>
+                <p>
+                    Просмотр видеоуроков и интерактивных материалов.
                 </p>
             </div>
 
         </div>
+
+    </section>
+
+    <!-- PARTICIPANTS -->
+
+    <section id="participants" class="participants">
+
+        <h2>Участники проекта</h2>
+
+        <div class="participant-card">
+
+            <h3>Islomiddin</h3>
+
+            <p>
+                Разработка дизайна сайта, создание HTML/CSS структуры,
+                настройка GitHub Pages и добавление функциональности.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- JOURNAL -->
+
+    <section id="journal" class="journal">
+
+        <h2>Журнал разработки</h2>
+
+        <div class="journal-post">
+            <h3>Пост 1</h3>
+            <p>Создан GitHub репозиторий проекта Moodle.</p>
+        </div>
+
+        <div class="journal-post">
+            <h3>Пост 2</h3>
+            <p>Разработан современный дизайн веб-сайта.</p>
+        </div>
+
+        <div class="journal-post">
+            <h3>Пост 3</h3>
+            <p>Добавлены основные функции платформы Moodle.</p>
+        </div>
+
+    </section>
+
+    <!-- RESOURCES -->
+
+    <section id="resources" class="resources">
+
+        <h2>Полезные ресурсы</h2>
+
+        <ul>
+            <li>
+                <a href="https://moodle.org/" target="_blank">
+                    Официальный сайт Moodle
+                </a>
+            </li>
+
+            <li>
+                <a href="https://docs.moodle.org/" target="_blank">
+                    Документация Moodle
+                </a>
+            </li>
+
+            <li>
+                <a href="https://github.com/" target="_blank">
+                    GitHub
+                </a>
+            </li>
+        </ul>
 
     </section>
 
@@ -94,7 +176,7 @@
     <footer>
 
         <p>
-            2026 Moodle Project | Created by Islomiddin
+            © 2026 Moodle Project | Разработано Islomiddin
         </p>
 
     </footer>
@@ -102,5 +184,4 @@
     <script src="script.js"></script>
 
 </body>
-
 </html>

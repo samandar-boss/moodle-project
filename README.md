@@ -2,8 +2,7 @@
 
 ## Project Goal
 
-The goal of this project is to create a simple educational website
-about Moodle platform and online learning systems.
+Создание современного веб-сайта о платформе Moodle.
 
 ## Technologies
 
@@ -11,20 +10,10 @@ about Moodle platform and online learning systems.
 - CSS
 - JavaScript
 
-## Website Sections
+## Description
 
-1. Home
-2. About Moodle
-3. Features
+Данный проект демонстрирует возможности системы Moodle,
+включая онлайн обучение, тестирование, задания и систему оценивания.
 
-## Moodle Features
-
-- Assignments
-- Quiz System
-- Grade System
-- Video Lessons
-- Online Education
-
-## Author
-
-Дониёров Самандар Шерали угли
+Проект опубликован через GitHub Pages.
+### Дониёров Самандар Шерали угли

@@ -1,13 +1,31 @@
-# Development Journal
+# Moodle Project Journal
 
-## Post 1
+---
 
-Создан GitHub репозиторий проекта Moodle.
+## Day 1
 
-## Post 2
+Created GitHub repository and project structure.
 
-Разработан современный дизайн сайта с использованием HTML и CSS.
+---
 
-## Post 3
+## Day 2
 
-Добавлены основные функции платформы Moodle и JavaScript функциональность.
+Designed the homepage and navigation menu.
+
+---
+
+## Day 3
+
+Added Moodle features section and responsive cards.
+
+---
+
+## Day 4
+
+Implemented JavaScript functionality and footer section.
+
+---
+
+## Day 5
+
+Published the website using GitHub Pages.

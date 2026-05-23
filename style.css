@@ -46,7 +46,34 @@ h2{
     font-size: 45px;
 }
 
-ul{
-    font-size: 30px;
-    padding-left: 60px;
+/* CARDS */
+
+.cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card{
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card h3{
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.card p{
+    font-size: 18px;
+    padding: 0;
 }

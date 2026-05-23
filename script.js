@@ -1,7 +1,3 @@
-const btn = document.getElementById("btn");
-
-btn.addEventListener("click", function(){
-
+function showMessage(){
     alert("Добро пожаловать в Moodle!");
-
-});
+}

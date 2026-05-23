@@ -18,6 +18,9 @@ nav{
     align-items: center;
     background-color: #222;
     padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo{
@@ -38,7 +41,7 @@ nav{
     color: orange;
 }
 
-/* HERO */
+/* HERO SECTION */
 
 .hero{
     text-align: center;
@@ -69,11 +72,33 @@ nav{
     font-size: 22px;
     cursor: pointer;
     transition: 0.3s;
+    background-color: white;
+    color: #ff6600;
 }
 
 .hero button:hover{
     background-color: #222;
     color: white;
+}
+
+/* HERO BUTTON */
+
+.hero-btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: white;
+    color: #ff6600;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.hero-btn:hover{
+    background-color: #222;
+    color: white;
+    transform: scale(1.05);
 }
 
 /* SECTIONS */
@@ -86,14 +111,24 @@ h2{
     font-size: 45px;
     margin-bottom: 30px;
     color: #ff6600;
+    text-align: center;
 }
 
-/* CARDS */
+/* ABOUT */
+
+.about-section p{
+    font-size: 22px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* FEATURES */
 
 .cards{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .card{
@@ -112,84 +147,18 @@ h2{
 .card h3{
     color: #ff6600;
     margin-bottom: 15px;
+    font-size: 28px;
 }
 
-/* PARTICIPANTS */
-
-.participant-card{
-    background-color: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+.card p{
+    font-size: 18px;
+    line-height: 1.5;
 }
 
-/* JOURNAL */
-
-.journal-post{
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-left: 5px solid orange;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
-
-/* RESOURCES */
-
-.resources ul{
-    list-style: none;
-}
-
-.resources li{
-    margin-bottom: 15px;
-}
-
-.resources a{
-    text-decoration: none;
-    color: #ff6600;
-    font-size: 22px;
-}
-
-.resources a:hover{
-    text-decoration: underline;
-}
-
-/* FOOTER */
-
-footer{
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 40px;
-}
-@media (max-width: 768px){
-
-    .menu{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .cards{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    h1{
-        font-size: 40px;
-        text-align: center;
-    }
-
-    p{
-        font-size: 20px;
-    }
-
-}
 /* GALLERY */
 
 .gallery{
-    text-align: center;
-    padding: 50px 20px;
+    background-color: white;
 }
 
 .gallery-images{
@@ -200,12 +169,205 @@ footer{
 }
 
 .gallery-images img{
-    width: 300px;
-    border-radius: 12px;
+    width: 320px;
+    border-radius: 15px;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
     transition: 0.3s;
 }
 
 .gallery-images img:hover{
     transform: scale(1.05);
+}
+
+/* PARTICIPANTS */
+
+.participant-card{
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.participant-card h3{
+    color: #ff6600;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.participant-card p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* JOURNAL */
+
+.journal-post{
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-left: 6px solid orange;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.journal-post h3{
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.journal-post p{
+    font-size: 20px;
+}
+
+/* ADVANTAGES */
+
+.advantages{
+    background-color: white;
+}
+
+.advantage-boxes{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.advantage{
+    background-color: #f4f4f4;
+    width: 320px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.advantage:hover{
+    transform: translateY(-10px);
+}
+
+.advantage h3{
+    color: #ff6600;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.advantage p{
+    font-size: 18px;
+}
+
+/* STATISTICS */
+
+.statistics{
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.stat-box{
+    text-align: center;
+}
+
+.stat-box h3{
+    font-size: 55px;
+    color: #ff6600;
+}
+
+.stat-box p{
+    font-size: 24px;
+}
+
+/* RESOURCES */
+
+.resources{
+    background-color: white;
+}
+
+.resources ul{
+    list-style: none;
+    text-align: center;
+}
+
+.resources li{
+    margin-bottom: 15px;
+}
+
+.resources a{
+    text-decoration: none;
+    color: #ff6600;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.resources a:hover{
+    color: #222;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p{
+    font-size: 18px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero h1{
+        font-size: 40px;
+    }
+
+    .hero p{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    .cards,
+    .advantage-boxes,
+    .gallery-images{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card,
+    .advantage{
+        width: 90%;
+    }
+
+    .gallery-images img{
+        width: 90%;
+    }
+
+    .statistics{
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

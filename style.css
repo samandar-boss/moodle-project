@@ -77,3 +77,18 @@ h2{
     font-size: 18px;
     padding: 0;
 }
+
+/* FOOTER */
+
+footer{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p{
+    margin: 0;
+    font-size: 18px;
+}
